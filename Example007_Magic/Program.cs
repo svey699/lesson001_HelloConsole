@@ -1,7 +1,7 @@
 ﻿Console.Clear();
 //Console.SetCursorPosition(10, 4);
 //Console.WriteLine("+");
-int xa = 40, ya = 1;
+int xa = 30, ya = 1;
 int xb = 1, yb = 30;
 int xc = 80, yc = 30;
 
@@ -21,15 +21,16 @@ int count = 0;
 while(count < 10000)
 
 {
-    int what = New Random().Next (0, 3); // 1, 2, 3
+    int what = new Random().Next(0, 3); // 1, 2, 3
 
     if(what == 0)
     {
         x = (x + xa) / 2;
         y = (y + ya) / 2;
     }
-
+     
      if(what == 1)
+
     {
         x = (x + xb) / 2;
         y = (y + yb) / 2;
@@ -42,5 +43,5 @@ while(count < 10000)
 Console.SetCursorPosition(x, y);
 Console.WriteLine("+");
 count = count + 1;
-}
 
+}
