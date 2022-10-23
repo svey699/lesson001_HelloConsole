@@ -3,15 +3,13 @@
 //-3 -> нет
 //7 -> нет
 
+double a = 4; 
+double b = -3;        
+double c = 7; 
 
-double a = 4;
-double b = -3;
-double c = 7;
-
-
-    if (a % 2 == 0) Console.WriteLine("Четное 4");
-    else Console.WriteLine("Нечетное");
-    if (b % 2 == 0) Console.WriteLine("Четное -3");
-    else Console.WriteLine("Нечетное");
-    if (c % 2 == 0) Console.WriteLine("Четное 7");
-    else Console.WriteLine("Нечетное");
+if (a % 2 == 0) Console.WriteLine("Четное");
+else Console.WriteLine( "Не четное ");
+if (b % 2 == 0) Console.WriteLine("Четное" );
+else Console.WriteLine("Не четное ");
+if (c % 2 == 0) Console.WriteLine("Четное" );
+else Console.WriteLine("Не четное");
