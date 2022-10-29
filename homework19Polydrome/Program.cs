@@ -4,15 +4,15 @@
 //12821 -> да
 //23432 -> да
 
-
-{
-int[] nums = {1, 2, 8, 2, 1};
-bool number = false;
-for (int i = 0; i < nums.Length; i++)
-if (nums [i] == nums[nums.Length-1])
-	number = true;
-if (number)
-	 Console.WriteLine($"Число: {nums} - является палиндромом.");
-else 
-     Console.WriteLine($"Число: {nums} - не является палиндромом.");
+int [] num = {1,4,2,1, 2};
+bool nums = true;
+for(int i=0;i<num.Length/2;i++){
+    if(num[i]!=num[num.Length-1-i])
+    nums=false;
 }
+if(nums)
+Console.WriteLine("число является палиндромом");
+ else
+Console.WriteLine("число не является палиндромом");
+
+
