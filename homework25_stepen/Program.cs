@@ -2,10 +2,15 @@
 //3, 5 -> 243 (3⁵)
 //2, 4 -> 16
 
-int a = 3;
-int b = 5;
-int a1 = 2;
-int b1 = 4;
-Console.WriteLine("3^5 = " + Math.Pow(a, b));
-Console.WriteLine("2^4 = " + Math.Pow(a1, b1));
-
+Console.Write("Введите число A : ");
+  int num = int.Parse(Console.ReadLine());
+  Console.Write("Введите натуральную степень B: ");
+  int n = int.Parse(Console.ReadLine());
+  int num_n=1;
+  for(int i=0; i<n; i++) 
+  {
+   num_n*=num;
+  }
+  Console.WriteLine("{0} ^ {1} = {2}", num, n, num_n);
+  Console.ReadKey();
+  return 0;
